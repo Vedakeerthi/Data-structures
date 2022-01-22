@@ -90,7 +90,7 @@ int main()
 	stack s;
 	s.push(40);
 	s.push(45);
-	;s.push(49);
+	s.push(49);
 	s.push(32); 
 	s.push(50);
 	s.pop();
