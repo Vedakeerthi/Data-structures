@@ -97,3 +97,31 @@ A complex linked list in which there are two pointers maintained, a pointer poin
 
 <img src='https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png' align='center' alt='Doubly linked list' height=300 width=1000>
 <br/>
+
+# **4. Binary Search Tree :**
+
+Binary search tree is a tree data structure, it is known as tree data structure because the data are stored in the form of a tree with the topmost element as the root, binary search tree is quiet a complicated data structure, the left subtree nodes consists of data lesser than that of the key value and the right subtree nodes consists of data greater than that of the key value. So, both the left subtree and the right subtree are also a binary search tree.
+
+The BST program, is quiet similar to the linked list program, the tree nodes are declared as structure with an interger data and two pointers to the left and right subtree. A class BinarySearchTree with constructor, destructor and other functions are declared, such as _*Setroot()*_, _*Createnode()*_, _*Insert()*_, _*Preorder()*_, _*Inorder()*_, _*Postorder()*_ and _*Display()*_ functions.
+
+The constructor and the destructor performs the root operation, one function initialize the root and the other function makes root as null respectively.
+
+_*Setroot()*_ function sets the function argument as the root for the tree structure.
+
+_*Createnode()*_ function temporarily creates a node by setting the left subtree and the right subtree as null.
+
+_*Insert()*_ function adds the data value to the tree, if the data is less than the root value it is set to the left subtree and if the data is greater than or equal to the root value it is set to the right subtree, this is how insertion is done in the case of binary search tree.
+
+_*Preorder()*_ function is one of the traversal method, where the tree is traversed from the root to the left subtree and finally to the right subtree, only the tree data which are traversed in this order are displayed in this function.
+
+_*Inorder()*_ function is another type of traversal technique where the tree is traversed from the left most subtree to the root and to the right most subtree, once again the data traversed in the tree are displayed in this function.
+
+_*Postorder()*_ function is the final traversal method where the right subtree followed by the light subtree and finally the root of the tree is traversed in order.
+
+_*Display()*_ function is used to display the content of the tree without any traversal order and in the form of a tree itself.
+
+And finally a switch case is used in the main function to access the various function of the binary search tree with ease.
+
+<img src='https://cdn.programiz.com/sites/tutorial2program/files/bst-vs-not-bst.png' align='center' alt='Binary search tree' height=300 width=1000>
+<br/>
+
