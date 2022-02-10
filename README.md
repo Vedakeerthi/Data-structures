@@ -3,6 +3,8 @@ A glance to all the basic data structures, and these data structures are execute
 * Stack
 * Queue
 * Linked list
+* Binary search tree
+* Tree traversal (BFS & DFS)
 <br/>
 
 # **1. Stack :**
@@ -125,3 +127,26 @@ And finally a switch case is used in the main function to access the various fun
 <img src='https://cdn.programiz.com/sites/tutorial2program/files/bst-vs-not-bst.png' align='center' alt='Binary search tree' height=300 width=1000>
 <br/>
 
+# **5. Tree traversal :**
+
+Tree traversal technique is how we traverse the data of the tree data structure, according to that tree traversal is of two types, they are :
+1. Breadth first search
+2. Depth first search
+    * Inorder
+    * Preorder
+    * Postorder
+
+Breadth First Search is a vertex based technique for finding a shortest path in graph. It uses a Queue data structure which follows first in first out. In BFS, one vertex is selected at a time when it is visited and marked then its adjacent are visited and stored in the queue. It is slower than DFS.
+
+Depth First search is quiet similar to the BFS algorithm but, it starts from the root node and prints all the adjacent unvisited branch nodes untills it reaches the goal node or if there is no other unvisited node in the tree or graph. DFS algorithm uses stack data structure to traverse. Some of the other types of DFS are the Inorder, Preorder, and Postorder, these are explained in the binary search tree.
+
+As per the program, a class graph is used and various functions are declared in the public modifier, those are _*getdata()*_, _*dfs()*_ and _*bfs()*_ functions.
+
+The _*getdata()*_ function is where the graph is acquired for the further traversal of the program, the graph is acquired using the technique of adjacency matrix where we enter 1 if the both nodes have link to each other otherwise we enter a 0. By this the graph is declared.
+
+_*dfs()*_ function is used for the DFS traversal as known here we use stack data structure, so that the Last to be entered is the first to be pushed out, it starts from the root node and add it to the stack and moves to the next root or the adjacent and until there is no unvisited node and prints all the elements of the stack.
+
+_*bfs()*_ function works as the same way but it uses queue to done the same traversal unlike dfs, it traverses level by level of the graph data structure and add it to the queue and prints all of the elements of the queue until the rear becomes the front, which means until the queue become empty.
+
+<img src='https://iq.opengenus.org/content/images/2020/05/dfs-vs-bfs.gif' align='center' alt='BFS & DFS' height=300 width=1000>
+<br/>
